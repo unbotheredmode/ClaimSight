@@ -1,1 +1,2 @@
-# ClaimSight-
+# ClaimSight
+ClaimSight ingests healthcare claims data (Synthea-generated, CMS-aligned) into a medallion lakehouse. Bronze holds raw CSVs; silver applies schema enforcement, deduplication, and PHI handling; gold serves analytics-ready marts (denial rates, payer performance, provider leakage). dbt models the gold layer in Snowflake; Streamlit exposes KPIs to ops/finance stakeholders. Target users: claims analysts asking "why are denials spiking for Payer X in Region Y?"
